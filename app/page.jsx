@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 import { FEATURES, STEPS, TESTIMONIALS } from "@/lib/landing";
 
 export default function LandingPage() {
@@ -50,13 +50,12 @@ export default function LandingPage() {
 
         <div className="container mx-auto max-w-5xl overflow-hidden rounded-xl shadow-xl">
           <div className="gradient p-1 aspect-[16/9]">
-            <img
-              src="logos/logo5.png"
+            <Image
+              src="/logos/logo5.png"
               width={1280}
               height={720}
               alt="Banner"
               className="rounded-lg mx-auto"
-              priority
             />
           </div>
         </div>
